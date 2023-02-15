@@ -1,4 +1,6 @@
-# Professional README Generator Starter Code
+# Professional README Generator
+
+This application is meant to build a detailed README file for your Github projects based on user responses to CLI prompts.
 
 [How to create a Professional README](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)
 
