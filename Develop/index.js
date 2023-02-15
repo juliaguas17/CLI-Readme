@@ -29,7 +29,7 @@ const questions = [
     },
     {
     type: 'input',
-    name: 'contribution',
+    name: 'credits',
     message: 'List any contribution credits: ',
     },
     {
@@ -72,7 +72,7 @@ init();
 
 
 // Flow of the Program:
-// 1. Questions - each question will be an object in an array 'questions'
+// 1. questions - each question will be an object in an array 'questions'
 // 2. init() - get answers to each question from CL
 // 3. pass answers into the function that generates the README
 // 4. pass the generated README to function that saves to file system
