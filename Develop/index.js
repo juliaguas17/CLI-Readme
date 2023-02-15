@@ -62,7 +62,7 @@ function init() {
     console.log(answers)
     return answers
     })
-    .catch((error => {
+    .catch((error) => {
         console.log(error)
     })
 }
