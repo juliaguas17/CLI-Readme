@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 
 // Pass 'npm i inquirer' into terminal to download node modules
-const inquirer = require('inquirer')
+const inquirer = require('inquirer');
 
 console.log('README generator running...') // Checks to make sure index.js is working
 
