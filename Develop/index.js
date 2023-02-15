@@ -56,7 +56,16 @@ const questions = [
 function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    return inquirer.prompt(questions)
+    .then((answers) => {
+    console.log(answers)
+    return answers
+    })
+    .catch((error => {
+        console.log(error)
+    })
+}
 
 // Function call to initialize app
 init();
@@ -64,7 +73,6 @@ init();
 
 // Flow of the Program:
 // 1. Questions - each question will be an object in an array 'questions'
-// 2. runQuery() - get answers to each question from CL
+// 2. init() - get answers to each question from CL
 // 3. pass answers into the function that generates the README
 // 4. pass the generated README to function that saves to file system
-
