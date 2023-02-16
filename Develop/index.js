@@ -36,14 +36,14 @@ const questions = [
     },
     {
     type: 'input',
-    name: 'github',
+    name: 'repository',
     message: 'Enter the URL of your GitHub repository: ',
     },
     {
     type: 'list',
     name: 'license',
     message: 'Choose license: ',
-    choices: ['MIT', 'ISC', 'GNUPLv3'],
+    choices: ['MIT', 'Apache v2', 'GNUPL v3'],
     filter(val) {
         return val.toLowerCase();
         }
