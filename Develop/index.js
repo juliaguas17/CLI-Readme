@@ -2,6 +2,8 @@
 
 // Pass 'npm i inquirer' into terminal to download node modules
 const inquirer = require('inquirer');
+// require generateMarkdown
+const generateMarkdown = require('./utils/generateMarkdown.js')
 
 console.log('README generator running...') // Checks to make sure index.js is working
 
@@ -34,13 +36,8 @@ const questions = [
     },
     {
     type: 'input',
-    name: 'email',
-    message: 'Enter your email: ',
-    },
-    {
-    type: 'input',
     name: 'github',
-    message: 'Enter your Github URL: ',
+    message: 'Enter the URL of your GitHub repository: ',
     },
     {
     type: 'list',
@@ -58,9 +55,9 @@ function writeToFile(fileName, data) {}
 // TODO: Create a function to initialize app
 function init() {
     return inquirer.prompt(questions)
-    .then((answers) => {
-    console.log(answers)
-    return answers
+    .then((data) => {
+    console.log(data)
+    return data
     })
     .catch((error) => {
         console.log(error)
