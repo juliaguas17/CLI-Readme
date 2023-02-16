@@ -27,7 +27,7 @@ let licenseLink;
       licenseLink = "https://www.gnu.org/licenses/gpl-3.0.en.html";
       break;
     default:
-      licenseLink = "";
+      licenseLink = " developer ";
       break;
   }
   
@@ -49,7 +49,7 @@ function renderLicenseSection(license) {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  const content = ["Description", "Installation", "Usage", "Credits", "Repository", "License"]
+  const content = ["Description", "Installation", "Usage", "Credits", "Questions", "License"]
 
   //Title
   let markdown = "# " + data.title + "\n";
@@ -67,24 +67,26 @@ function generateMarkdown(data) {
   markdown += "\n";
 
   //Description
-  markdown += "# " + content[0] + "\n";
+  markdown += "# Description\n";
   markdown += data.description + "\n";
 
   //Installation
-  markdown += "# " + content[1] + "\n";
+  markdown += "# Installation\n";
   markdown += data.installation + "\n";
 
   // Usage
-  markdown += "# " + content[2] + "\n";
+  markdown += "# Usage\n";
   markdown += data.usage + "\n";
 
   // Credits
-  markdown += "#" + content[3] + "\n";
+  markdown += "# Contributing\n";
   markdown += data.credits + "\n";
 
-  //Repo
-  markdown += "# " + content[4] + "\n";
-  markdown += data.repository + "\n";
+  // Questions
+  markdown += "# Questions\n";
+  markdown += "I can be reached via email or Github with further questions."
+  markdown += "Github: " + data.repository + "\n";
+  markdown += "Email: " + data.email + "\n";
 
   //License
   markdown += renderLicenseSection(data.license) + "\n";

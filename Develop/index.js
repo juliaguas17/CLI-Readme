@@ -38,17 +38,24 @@ const questions = [
     },
     {
     type: 'input',
+    name: 'tests',
+    message: 'Enter additional testing information: ',
+    },
+    {
+    type: 'input',
     name: 'repository',
     message: 'Enter the URL of your GitHub repository: ',
+    },
+    {
+    type: 'input',
+    name: 'email',
+    message: 'Enter your email address: ',
     },
     {
     type: 'list',
     name: 'license',
     message: 'Choose license: ',
     choices: ['MIT', 'Apache v2', 'GNUPL v3', 'None'],
-    filter(val) {
-        return val.toLowerCase();
-        }
     }
 ];
 // TODO: Create a function to write README file
