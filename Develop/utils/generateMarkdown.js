@@ -78,6 +78,10 @@ function generateMarkdown(data) {
   markdown += "# Usage\n";
   markdown += data.usage + "\n";
 
+  // Tests
+  markdown += "# Tests\n";
+  markdown += data.tests + "\n";
+  
   // Credits
   markdown += "# Contributing\n";
   markdown += data.contributing + "\n";
