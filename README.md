@@ -21,5 +21,5 @@ I can be reached via email or Github with further questions.
 Github: github.com/juliaguas17
 Email: juliaguas17@gmail.com
 ## License
-Please see https://mit-license.org/ to get detailed license information.
+Please see (https://mit-license.org/) to get detailed license information.
 

@@ -37,11 +37,12 @@ let licenseLink;
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
+  
   let licenseSect = "";
 
   if (license != "None") {
-    licenseSect += "## License\n"
-    licenseSect += "Please see " + renderLicenseLink(license) + " to get detailed license information.\n";
+    let licenseLink = renderLicenseLink(license);
+    licenseSect += "Please see (" + licenseLink + ") to get detailed license information.\n";
   }
 
   return licenseSect;
@@ -93,6 +94,7 @@ function generateMarkdown(data) {
   markdown += "Email: " + data.email + "\n";
 
   //License
+  markdown += "# License\n";
   markdown += renderLicenseSection(data.license) + "\n";
 
   return markdown;
