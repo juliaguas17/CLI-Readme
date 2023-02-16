@@ -1,5 +1,7 @@
 // TODO: Include packages needed for this application
 
+// for writeFile() function
+const fs = require('fs');
 // Pass 'npm i inquirer' into terminal to download node modules
 const inquirer = require('inquirer');
 // require generateMarkdown
@@ -43,19 +45,23 @@ const questions = [
     type: 'list',
     name: 'license',
     message: 'Choose license: ',
-    choices: ['MIT', 'Apache v2', 'GNUPL v3'],
+    choices: ['MIT', 'Apache v2', 'GNUPL v3', 'None'],
     filter(val) {
         return val.toLowerCase();
         }
     }
 ];
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
-
+function writeToFile(data) {
+    const fileName = "./tests/README.md";
+    fs.writeFile(fileName, data, function (err) {
+        err ? console.log(err) : console.log(fileName + " created!")
+    });
+}
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions)
-    .then(data => writeToFile(generateMarkdown(data)))
+    .then(answers => writeToFile(generateMarkdown(answers)))
     }
 
 // Function call to initialize app
