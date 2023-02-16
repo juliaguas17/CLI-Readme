@@ -67,23 +67,23 @@ function generateMarkdown(data) {
   markdown += "\n";
 
   //Description
-  markdown += "## " + content[0] + "\n";
+  markdown += "# " + content[0] + "\n";
   markdown += data.description + "\n";
 
   //Installation
-  markdown += "## " + content[1] + "\n";
+  markdown += "# " + content[1] + "\n";
   markdown += data.installation + "\n";
 
   // Usage
-  markdown += "## " + content[2] + "\n";
+  markdown += "# " + content[2] + "\n";
   markdown += data.usage + "\n";
 
   // Credits
-  markdown += "## " + content[3] + "\n";
+  markdown += "#" + content[3] + "\n";
   markdown += data.credits + "\n";
 
   //Repo
-  markdown += "## " + content[4] + "\n";
+  markdown += "# " + content[4] + "\n";
   markdown += data.repository + "\n";
 
   //License
