@@ -33,7 +33,7 @@ const questions = [
     },
     {
     type: 'input',
-    name: 'credits',
+    name: 'contributing',
     message: 'List any contribution credits: ',
     },
     {
@@ -43,8 +43,8 @@ const questions = [
     },
     {
     type: 'input',
-    name: 'repository',
-    message: 'Enter the URL of your GitHub repository: ',
+    name: 'github',
+    message: 'Enter your GitHub username: ',
     },
     {
     type: 'input',
