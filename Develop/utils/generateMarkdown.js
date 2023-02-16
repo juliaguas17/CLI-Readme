@@ -90,7 +90,7 @@ function generateMarkdown(data) {
   // Questions
   markdown += "# Questions\n";
   markdown += "I can be reached via email or Github with further questions.\n";
-  markdown += "Github: github.com/" + data.github + "\n";
+  markdown += "Github: https://github.com/" + data.github + "\n";
   markdown += "Email: " + data.email + "\n";
 
   //License
