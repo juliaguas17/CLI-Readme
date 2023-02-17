@@ -11,7 +11,7 @@
 # Description
 This application is meant to build a detailed README file for Github projects based on user responses to CLI prompts.
 # Installation
-In order to install inquirer, please use ``` npm i inquirer@8.2.4.```
+In order to install inquirer, please use ```npm i inquirer@8.2.4.```
 # Usage
 You can view video instructions and an example invoking the application here: [Example](/Develop/tests/example-video.webm)
 # Contributing
