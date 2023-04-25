@@ -1,4 +1,4 @@
-# Week-9-CLI-Readme
+# CLI Readme
 ![License Badge](https://shields.io/badge/license-MIT-green)
 ## Table of Contents
 1. [Description](#description)
